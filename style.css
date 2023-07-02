@@ -1,0 +1,65 @@
+body{
+    background-color: #f3ffb6;
+
+    justify-content: center;
+    align-content: center;
+}
+
+h1{
+    color: 883677;
+    text-shadow: 1px;
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+.navBar{
+    width:auto;
+    height:auto;
+    top:auto;
+    margin:20px;
+
+    left:0;
+    right:0;
+
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.myButton{
+    width:60px;
+    height:40px;
+    background-color: #708d81;
+
+  
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    border-color: black;
+    color:antiquewhite;
+}
+
+.header{
+    text-align: center;
+    width:auto;
+    height: auto;
+    margin: 10px;
+    border-color: black;
+    border-width: 5px;
+    border-style: solid;
+}
+
+.sameWidth{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+}
