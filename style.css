@@ -157,15 +157,11 @@ a {
 }
 
 
-thead{
-    border:inherit;
-}
-
 th{
     width:175px;
     border: inherit;
     border-style:solid;
-    border-width: inherit;
+    border-width: 3px;
     border-color: inherit;
     border-bottom: none;
 }
