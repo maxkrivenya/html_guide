@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+<head>
+    <meta charset = "utf-8">
+    <title>Divs</title>
+    <link rel = "stylesheet" href = "../style.css">
+</head>
+
+
+<body>
+    <div class = "pageTop">
+        <img src = "../waltuh.jpg" style = "grid-column: 1; justify-self: left; margin:0px; height:inherit;">
+        <p style = "grid-column: 2; text-align: center;">Max's HTML dump</p>
+        <a href= mailto:"maxkrivenya@gmail.com">
+            <p style = "grid-column: 3; text-align: center;">
+                Gmail
+            </p>
+        </a>
+        <a href = https://github.com/maxkrivenya>
+            <p style = "grid-column: 4; text-align: center;">
+                GitHub
+            </p>
+        </a>
+    </div>
+    <div class = "secretCenter"  style = "margin-bottom:35px;">
+        <div class = "header">
+            <h2>&nbsp What are Divs? &nbsp</h2>
+        </div>
+    </div>
+    
+    <p><strong>Divs</strong> are divisions (sections, containers) of a web-page.
+    They are declared with use of "div" tag, can contain any type of information (text, pictures, videos, audios) and are easily
+    changeable. 
+    </p>
+    <div class = "sameWidth">
+    <div>
+        <p>Most common parameters for a div are:</p>
+    <ul style = "display: flex; flex-direction: column; text-align: left;">
+        <li>
+            <strong>width </strong> &nbsp and &nbsp <strong> height</strong>
+        </li>
+        <li>
+            <strong>color</strong>
+        </li>
+        <li>
+            <strong>background-color:</strong>
+        </li>
+        <li>
+            <strong>position</strong>
+        </li>    
+    </ul>
+</div>
+    <img src = "div.png" alt = "div" style = "max-width: 50%;">
+</div>
+    <p style = "text-align: center;"><strong>Width and height </strong>are responsible for the size of your container, therefore are often measured in pixels (px).
+        Other options include viewport width (vw) and percentages (%)
+    </p>
+    <p style = "text-align: center;">As you already know from previous page, <strong>color and background-color </strong> take
+        in color code values (usually in RGB or HEX).
+    </p>
+    <p style = "text-align: left; margin-top:30px;"><strong>Position</strong> is the more interesting of these. It has a few values, such as:</p>
+    <dl style = "display: flex; flex-direction: column; text-align: left;">
+        <dt>
+            <strong>static</strong>
+        </dt>
+        <dd>
+            The default value; does nothing new with the div
+        </dd>
+        <dt>
+            <strong>relative</strong>
+        </dt>
+        <dd>
+            Usually comes with a set of left: right: top: bottom: offsets,
+            which move the div from its postion as if it were static. 
+        </dd>
+        <dt>
+            <strong>absolute</strong>
+        </dt>
+        <dd>
+            Hovers over the rest of the content. Also comes with offsets! 
+            The offsets position it relative to its container.
+        </dd>
+        <dt>
+            <strong>sticky</strong>
+        </dt>
+        <dd>
+            Always on page, even if you try to scroll past it
+        </dd>
+        <dt><strong>inherit</strong></dt>
+        <dd>
+            Gets whatever value the "parent" had
+        </dd>
+    </dl>
+
+
+    <div class = "navBar">
+        <a href = "../colors/colors.html">
+            <div class = "myButton">
+                <p>&nbsp prev &nbsp</p>
+            </div>
+        </a>
+        <a href = "../index.html">
+            <div class = "myButton">
+                <p>&nbsp main &nbsp</p>
+            </div>
+        </a>
+        <a href = "../index.html">
+            <div class = "myButton">
+                <p>&nbsp next &nbsp</p>
+            </div>
+        </a>
+    </div>
+</body>
+</html>
