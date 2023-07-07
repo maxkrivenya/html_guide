@@ -197,9 +197,61 @@ h3{
     border-width: 3px;
 }
 
-.pageTop a:hover{
+.pageTop > a:hover{
     color:#f3ffb6;
-    border: 3px;
-    border-radius: 3px;
+    border-color: #f3ffb6;
+    border-width: 3px;
     border-style: solid;
+    border-radius: 10px;
+}
+
+.dropdownMenu{
+    display:block;
+    width:12vw;
+    height:inherit;
+    background-color: #708d81;
+    margin:0px;
+    padding: 0px;
+}
+
+.dropdownMenu ul{
+    display:block;
+    width:inherit;
+    margin:0;
+    padding: 0;
+}
+
+.dropdownMenu ul li{
+    display:block;
+    flex-direction: column;
+}
+
+.dropdownMenu ul li:hover ul{
+    display:flex;
+    flex-direction: column;
+}
+
+.dropdownMenu ul li ul{
+    display: none;
+    position: absolute;
+    width: inherit;
+    background-color: #708d81;
+    border-radius: 10px;
+    padding: 7px;
+    margin-left:5px;
+}
+
+.dropdownMenu ul li ul li{
+    height:40px;
+    color:#f3ffb6;
+    background-color: #708d81;
+    margin-bottom:10px;
+}
+
+img{
+    width: 120px;
+}
+
+.dropdownMenu .myButton{
+    margin: 0px;
 }
