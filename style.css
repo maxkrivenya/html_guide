@@ -63,9 +63,11 @@ h2{
 
 }
 
-.myButton:hover, .pageTop:hover {
+.myButton:hover{
     background-color: #883677;
 }
+
+
 
 
 .header{
@@ -193,4 +195,11 @@ th{
 h3{
     padding:5px;
     border-width: 3px;
+}
+
+.pageTop a:hover{
+    color:#f3ffb6;
+    border: 3px;
+    border-radius: 3px;
+    border-style: solid;
 }
