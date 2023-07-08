@@ -202,7 +202,6 @@ h3{
     border-color: #f3ffb6;
     border-width: 3px;
     border-style: solid;
-    border-radius: 10px;
 }
 
 .dropdownMenu{
@@ -217,32 +216,48 @@ h3{
 .dropdownMenu ul{
     display:block;
     width:inherit;
-    margin:0;
+    margin: 0;
     padding: 0;
+    
+}
+
+.dropdownMenu img{
+    width:118px;
 }
 
 .dropdownMenu ul li{
+    height:60px;
+    margin: 0;
+    padding: 0;
     display:block;
     flex-direction: column;
 }
 
-.dropdownMenu ul li:hover ul{
+.dropdownMenu ul li ul{
     display:flex;
     flex-direction: column;
+    
+}
+
+.dropdownMenu ul li:hover ul{
+    display:block;
+
 }
 
 .dropdownMenu ul li ul{
     display: none;
+    left:0px;
+    top:60px;
     position: absolute;
-    width: inherit;
     background-color: #708d81;
-    border-radius: 10px;
     padding: 7px;
-    margin-left:5px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .dropdownMenu ul li ul li{
     height:40px;
+    
     color:#f3ffb6;
     background-color: #708d81;
     margin-bottom:10px;
