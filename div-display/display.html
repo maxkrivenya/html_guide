@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+    <head>
+        <title>Display tag</title>
+        <meta charset = "utc-8">
+        <link rel = "stylesheet" href = "../style.css">
+        <script>
+            function myFunction() { 
+                document.getElementById("unifinishedWarning").style.display="none";
+            }
+            </script>
+    </head>
+
+    <body>
+        <a href = "#"><div id = "unfinishedWarning">Unfinished. Sorry!</div></a>
+
+        
+        <div class = "pageTop">
+            <div class = "dropdownMenu">
+                <ul>
+                    <li>
+                <img src = "../waltuh.jpg" style = "grid-column: 1; justify-self: left; margin:0px; height:60px;">
+                <ul>
+                    <li>
+                        <a href = "../index.html">
+                            <div class = "myButton">
+                                Main page
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href = "../htmlBase/htmlBase.html">                        <div class = "myButton">
+                           Basics
+                        </div></a>
+                    </li>
+                    <li>
+                        <a href = "../texts/texts.html"> 
+                            <div class = "myButton">
+                            Text
+                        </div></a>
+                    </li>
+                    <li>
+                        <a href = "../colors/colors.html">  
+                        <div class = "myButton">
+                            Colors
+                        </div>
+                    </a>
+                    </li>
+                    <li>
+                        <a href = "../div/div.html">  
+                            <div class = "myButton">
+                                Divs
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href = "../div-display/display.html">  
+                            <div class = "myButton">
+                                Display
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            </ul>
+            </div>
+            <a href = "../index.html">
+                <p style = "grid-column: 2; text-align: center;">
+                    Max's HTML dump
+                </p>
+            </a>
+            <a href= mailto:"maxkrivenya@gmail.com">
+                <p style = "grid-column: 3; text-align: center;">
+                    Gmail
+                </p>
+            </a>
+            <a href = https://github.com/maxkrivenya>
+                <p style = "grid-column: 4; text-align: center;">
+                    GitHub
+                </p>
+            </a>
+        </div>
+
+        <div class = "secretCenter"  style = "margin-bottom:35px;">
+            <div class = "header">
+                <h2>&nbsp Divs: Display &nbsp</h2>
+            </div>
+        </div>
+
+        <p><strong>Display </strong>is a <strong>div</strong> property that
+            determines the type of box(es) created for an element. Works in combination
+            with <strong>float </strong> and <strong> position. </strong>
+        </p>
+
+        <dl>
+            <dt>
+                <strong>flex</strong>
+            </dt>
+            <dd>
+                <p>Adds additional axes to position your items at! Before that, you would have to
+                    stuff everything in one row. Now, using justify- and align- properties you can position
+                    items in relation to:</p>
+                <ul style = "display: flex; flex-direction: column;">
+                    <li>
+                        <strong>div's </strong> &nbsp borders (left, right, top, bottom)
+                    </li>
+                    <li>
+                        <strong>div's </strong> &nbsp central axes (center)
+                    </li>
+                    <li>
+                        other elements within &nbsp <strong>the div </strong> &nbsp (space-between/-around/-equally)
+                    </li>
+                </ul>
+                <p>Also you can change how the items are directed using flex-direction: row/column/row-reverse/column-reverse.</p>
+                <br><br>
+
+            </dd>
+
+            <dt>
+                <strong>grid</strong>
+            </dt>
+            <dd>
+                <p>
+                Cool stuff! Imagine a sudoku but without the numbers. That's 
+                basically a 9x9 grid with equal square tiles. You can set the amount of
+                <strong>rows</strong> and <strong>columns</strong> yourself using <strong>grid-template-rows</strong> and <strong>grid-template-columns</strong>.
+                You can set width and height with "px", "%" and a new unit - <strong><u>fraction units! ("fr").</u></strong>
+                These can be used to <em>equally</em> divide up the <em>leftover</em> space.
+                For example, <u><strong>grid-template-columns</strong>: 1fr 500px 1fr</u> would give you a middle column
+                of 500px and one column on each side takind up the rest of the grid width.
+            </p>
+            </dd>
+            
+        </dl>
+        <div class = "navBar">
+            <a href = "../div/div.html">
+                <div class = "myButton">
+                    <p>&nbsp prev &nbsp</p>
+                </div>
+            </a>
+            <a href = "../index.html">
+                <div class = "myButton">
+                    <p>&nbsp main &nbsp</p>
+                </div>
+            </a>
+            <a href = "../index.html">
+                <div class = "myButton">
+                    <p>&nbsp next &nbsp</p>
+                </div>
+            </a>
+        </div>
+    </body>
+
+</html>

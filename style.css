@@ -2,9 +2,16 @@
 
 * {
     font-family:Montserrat ;
+    line-height: 30px;
+}
+
+#indexList > li{
+    list-style: none;
 }
 
 body{
+    top:0;
+    
     background-color: #f3ffb6;
     margin-top: 0px;
     margin-left:0px;
@@ -13,12 +20,12 @@ body{
     text-decoration-line:none;
     text-align: left;
     flex-direction: column;
-    justify-content:space-evenly;
     align-content: center;
 }
 
 body > p{
     margin-left:20px;
+    text-indent: 30px;
 }
 
 h1{
@@ -36,8 +43,10 @@ h2{
     height:auto;
     margin:20px;
 
+
     left:0;
     right:0;
+
     display:flex;
     align-items: center;
     justify-content: space-between;
@@ -110,6 +119,7 @@ ul{
     display:flex; 
     flex-wrap: wrap; 
     flex-direction: row;
+
 }
 
 .secretCenter{
@@ -149,11 +159,13 @@ ol{
     text-align: left;
     justify-content: left;
     text-align: left;
-    list-style-type: none;
+    list-style-type:decimal;
 }
 
 li{
-    display:flex;
+    list-style-position: outside;
+    list-style-type: circle;
+
     margin-bottom:30px;
 }
 
@@ -251,6 +263,7 @@ h3{
     position: absolute;
     background-color: #708d81;
     padding: 7px;
+
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
@@ -266,4 +279,23 @@ h3{
 
 .dropdownMenu .myButton{
     margin: 0px;
+}
+
+#unfinishedWarning{
+    transition: 0.3s;
+    width:120px;
+    height:fit-content;
+    background-color: red;
+    color:antiquewhite;
+    padding: 2px;
+    position:absolute;
+    left:30px;
+    top:80px;
+    opacity:30%;
+    text-align: center;
+}
+
+#unfinishedWarning:hover{
+    transition: 0.3s;
+    opacity:60%;
 }
