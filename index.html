@@ -5,6 +5,22 @@
     <meta charset = "utf-8">
     <title>HTML & CSS info dump</title>
     <link rel = "stylesheet" href = "style.css">
+
+    <script id = "func">
+        let a = 0;
+        let b = [];
+        do{
+            b[a] = ++a;
+        }while(a < 16);
+        console.log(b);
+        let i = 0;
+        let summ = 0;
+        while(b[i]){
+            summ+=b[i];
+            i++;
+        }
+        console.log("summ of b[] is %d", summ);
+    </script>
 </head>
 
 <body>
@@ -151,6 +167,10 @@
                 <p>&nbsp next &nbsp</p>
             </div>
         </a>
+    </div>
+
+    <div class = "myButton">
+        <script id = "func"></script>
     </div>
 </body>
 
