@@ -5,22 +5,7 @@
     <meta charset = "utf-8">
     <title>HTML & CSS info dump</title>
     <link rel = "stylesheet" href = "style.css">
-
-    <script id = "func">
-        let a = 0;
-        let b = [];
-        do{
-            b[a] = ++a;
-        }while(a < 16);
-        console.log(b);
-        let i = 0;
-        let summ = 0;
-        while(b[i]){
-            summ+=b[i];
-            i++;
-        }
-        console.log("summ of b[] is %d", summ);
-    </script>
+    <link rel = "script" href = "index.js">
 </head>
 
 <body>
@@ -100,55 +85,7 @@
     </h3>
     </div>
     <ol id = "indexList">
-        <li>
-            <a href = "htmlBase/htmlBase.html">
-            <div class = "myButton">
-                    <h3>
-                        <em>Template</em>
-                    </h3>
-                </div>
-             </a>
-        </li>
-        <li>
-            <a href = "texts/texts.html">
-                <div class = "myButton">
-                        <h3>
-                            <em>&nbsp Texts &nbsp</em>
-                        </h3>
-                </div>
-            </a>
-        </li>
-        <li>
-            <a href = "colors/colors.html">
-                <div class = "myButton">
-                        <h3>
-                            <em>&nbsp Colors &nbsp</em>
-                        </h3>
-                </div>
-            </a>        
-        </li>
-        <li>
-            <a href = "div/div.html">
-                <div class = "myButton">
-                        <h3>
-                            <em>&nbsp Divs &nbsp</em>
-                        </h3>
-                </div>
-            </a>        
-        </li>
-        <li>
-            <ul>
-                <li>
-                    <a href = "div-display/display.html">
-                        <div class = "myButton">
-                            <h3>
-                                <em>&nbsp Display &nbsp</em>
-                            </h3>
-                    </div>
-                    </a>
-                </li>
-            </ul>        
-        </li>
+        <script src="index.js">indexUL();</script>
     </ol>
     </div>
     <div class = "navBar">
@@ -168,12 +105,4 @@
             </div>
         </a>
     </div>
-
-    <div class = "myButton">
-        <script id = "func"></script>
-    </div>
-</body>
-
-
-
 </html>

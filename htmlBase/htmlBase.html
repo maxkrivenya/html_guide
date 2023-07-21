@@ -5,9 +5,11 @@
     <meta charset = "utf-8">
     <title>HTML Basic Template</title>
     <link rel = "stylesheet" href = "../style.css">
+    <link rel = "script" href = "../sidePages.js">
 </head>
 
 <body>
+    <div style = "position:absolute; left:30%; color:#883677" id = "myTitle">Template</div>
     <div class = "pageTop">
         <div class = "dropdownMenu">
             <ul>
@@ -87,23 +89,8 @@
     
     </div>
 
-    <div class = "navBar">
-        <a href = "../index.html">
-            <div class = "myButton">
-                <p>&nbsp prev &nbsp</p>
-            </div>
-        </a>
-        <a href = "../index.html">
-            <div class = "myButton">
-                <p>&nbsp main &nbsp</p>
-            </div>
-        </a>
-        <a href = "../texts/texts.html">
-            <div class = "myButton">
-                <p>&nbsp next &nbsp</p>
-            </div>
-        </a>
-        
+    <div class = "navBar" id = "navBar">
+        <script src = "../sidePages.js">navBarSidePages("Template");</script>
     </div>
 </body>
 

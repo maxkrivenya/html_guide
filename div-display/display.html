@@ -5,14 +5,16 @@
         <title>Display tag</title>
         <meta charset = "utc-8">
         <link rel = "stylesheet" href = "../style.css">
+        <link rel = "script" href = "../sidePages.js">
         <script>
             function myFunction() { 
                 document.getElementById("unifinishedWarning").style.display="none";
             }
-            </script>
+         </script>
     </head>
 
     <body>
+        <div style = "position:absolute; left:30%; color:#883677" id = "myTitle">Display</div>
         <a href = "#"><div id = "unfinishedWarning">Unfinished. Sorry!</div></a>
 
         
@@ -136,21 +138,9 @@
         </dl>
         
         <div class = "navBar">
-            <a href = "../div/div.html">
-                <div class = "myButton">
-                    <p>&nbsp prev &nbsp</p>
-                </div>
-            </a>
-            <a href = "../index.html">
-                <div class = "myButton">
-                    <p>&nbsp main &nbsp</p>
-                </div>
-            </a>
-            <a href = "../index.html">
-                <div class = "myButton">
-                    <p>&nbsp next &nbsp</p>
-                </div>
-            </a>
+            <div class = "navBar" id = "navBar">
+                <script src = "../sidePages.js">navBarSidePages("Template");</script>
+            </div>
         </div>
     </body>
 

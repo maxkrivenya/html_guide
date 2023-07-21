@@ -5,9 +5,11 @@
     <meta charset="utc-8">
     <title>How do texts work in HTML</title>
     <link rel = "stylesheet" href = "../style.css">
+    <link rel = "script" href = "../sidePages.js">
 </head>
 
 <body>
+    <div style = "position:absolute; left:30%; color:#883677" id = "myTitle">Texts</div>
     <div class = "pageTop">
         <div class = "dropdownMenu">
             <ul>
@@ -186,21 +188,9 @@
     The anchor tag can not only be used on text, but any type of HTML content, as long as the "a" tag is on top.
     </p>
     <div class = "navBar">
-        <a href = "../htmlBase/htmlBase.html">
-            <div class = "myButton">
-                <p>&nbsp prev &nbsp</p>
-            </div>
-        </a>
-        <a href = "../index.html">
-            <div class = "myButton">
-                <p>&nbsp main &nbsp</p>
-            </div>
-        </a>
-        <a href = "../colors/colors.html">
-            <div class = "myButton">
-                <p>&nbsp next &nbsp</p>
-            </div>
-        </a>
+        <div class = "navBar" id = "navBar">
+            <script src = "../sidePages.js">navBarSidePages("Template");</script>
+        </div>
     </div>
 </body>
 </html>

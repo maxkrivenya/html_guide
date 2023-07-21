@@ -5,10 +5,12 @@
     <meta charset = "utf-8">
     <title>Divs</title>
     <link rel = "stylesheet" href = "../style.css">
+    <link rel = "script" href = "../sidePages.js">
 </head>
 
 
 <body>
+    <div style = "position:absolute; left:30%; color:#883677" id = "myTitle">Divs</div>
     <div class = "pageTop">
         <div class = "dropdownMenu">
             <ul>
@@ -139,21 +141,9 @@
 
 
     <div class = "navBar">
-        <a href = "../colors/colors.html">
-            <div class = "myButton">
-                <p>&nbsp prev &nbsp</p>
-            </div>
-        </a>
-        <a href = "../index.html">
-            <div class = "myButton">
-                <p>&nbsp main &nbsp</p>
-            </div>
-        </a>
-        <a href = "../div-display/display.html">
-            <div class = "myButton">
-                <p>&nbsp next &nbsp</p>
-            </div>
-        </a>
+        <div class = "navBar" id = "navBar">
+            <script src = "../sidePages.js">navBarSidePages("Template");</script>
+        </div>
     </div>
 </body>
 </html>
