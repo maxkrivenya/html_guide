@@ -7,7 +7,9 @@ function findPositionInArray(arr, el){
     return -1;
 }
 function navBarSidePages(){{
-    const pageNames = ["Template", "Texts", "Colors", "Divs", "Display"];
+    const pageNames = ["HTML Basic Template",
+     "How do texts work in HTML", 
+     "Colours", "Divs", "Display tag"];
     const pageAdresses = ["../htmlBase/htmlBase.html", 
     "../texts/texts.html",
     "../colors/colors.html",
@@ -15,7 +17,7 @@ function navBarSidePages(){{
     "../div-display/display.html"];
 
     let navBar = document.getElementById("navBar");
-    let pageTitle = document.getElementById("myTitle").innerText;
+    let pageTitle = document.title;
     let pagePosition = findPositionInArray(pageNames, pageTitle);
     
     let leftA = document.createElement("a");
