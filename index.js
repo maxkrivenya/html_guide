@@ -19,6 +19,25 @@ function indexUL(){{
         newButton.innerText = pageNames[i];
     }
     console.log(2);
-}}
+}}  indexUL();
 
-indexUL();
+function dropdownMenuIndex(){{
+    const pageNames = ["Main page", "Basics", "Text", "Colors", "Divs", "Div: Display"];
+    const pageAddresses = ["index.html", "htmlBase/htmlBase.html",
+    "text/text.html", "colors/colors.html", 
+    "div/div.html", "div-display/display.html"];
+    let dropdownMenuUL = document.getElementById("dropdownMenuUL");
+
+    for (let i = 0; i < pageNames.length; i++){
+        let newLI = document.createElement("li");
+        let newA = document.createElement("a");
+        newA.href = pageAddresses[i];
+        newLI.appendChild(newA);
+        let newButton = document.createElement("div");
+        newButton.className = "myButton";
+        newButton.innerText = pageNames[i];
+        newA.appendChild(newButton);
+        dropdownMenuUL.appendChild(newLI);
+    }
+
+}} dropdownMenuIndex();
