@@ -52,7 +52,7 @@ function navBarSidePages(){{
     rightA.appendChild(rightButton);
 }}  navBarSidePages();
 
-function dropdownMenuSidePages(){{
+function dropdownMenuSidePages(){
     const pageNames = ["Main page", "Basics", "Text", "Colors", "Divs", "Div: Display"];
     const pageAddresses = ["../index.html", "../htmlBase/htmlBase.html",
     "../text/text.html", "../colors/colors.html", "../div/div.html", "../div-display/display.html"];
@@ -70,4 +70,52 @@ function dropdownMenuSidePages(){{
         dropdownMenuUL.appendChild(newLI);
     }
 
-}} dropdownMenuSidePages();
+}
+
+function pageTopSidePages(){{
+    let pageTop = document.getElementById("pageTop");
+
+    let dropdownMenu = document.createElement("div");
+    pageTop.appendChild(dropdownMenu);
+        dropdownMenu.className = "dropdownMenu";
+        dropdownMenu.id = "dropdownMenu";
+        pageTop.appendChild(dropdownMenu);
+        let UL = document.createElement("ul");
+            let UL_LI = document.createElement("li");
+                let img = document.createElement("img");
+                    img.alt = "waltuh"; img.src = "../waltuh.jpg";
+                    img.style.gridColumn = 1; img.style.justifySelf = "left"; img.style.margin = 0; img.style.height = "60px";
+                let UL_LI_UL = document.createElement("ul");
+                    UL_LI_UL.id = "dropdownMenuUL";
+    UL_LI.appendChild(UL_LI_UL);
+    UL_LI.appendChild(img);
+    UL.appendChild(UL_LI);
+    dropdownMenu.appendChild(UL);
+    dropdownMenuSidePages();
+
+    let midA = document.createElement("a");
+    midA.href = "index.html";
+    pageTop.appendChild(midA);
+        let midAP = document.createElement("p");
+        midAP.innerText = "Max's HTML dump";
+        midAP.style.gridColumn = 2; midAP.style.textAlign = "center";
+    midA.appendChild(midAP);
+
+    let mail = document.createElement("a");
+    pageTop.appendChild(mail);
+    mail.href = "mailto:'maxkrivenya@gmail.com'";
+        let mailP = document.createElement("p");
+        mailP.innerText = "Gmail";
+        mailP.style.gridColumn = 3; mailP.style.textAlign = "center";
+    mail.appendChild(mailP);
+
+    let github = document.createElement("a");
+    pageTop.appendChild(github);
+    github.href = "https://github.com/maxkrivenya";
+        let githubP = document.createElement("p");
+        githubP.innerText = "GitHub";
+        githubP.style.gridColumn = 4; githubP.style.textAlign = "center";
+    github.appendChild(githubP);
+
+
+}} pageTopSidePages();
